@@ -1,0 +1,10 @@
+*{
+    padding: 0px;
+    width: 0px;
+}
+.list{
+    display: flex;
+}
+.head{
+    text-align: center;
+}

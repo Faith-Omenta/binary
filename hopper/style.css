@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.nav,ul,li{
+    display: flex;
+    margin: 50px;
+    
+}
+body{
+    /* border: 40px black solid; */
+    border-top: 40px black solid;
+    border-left:  40px black solid;
+    border-right:  40px black solid;
+    border-radius: 3%;
+    /* padding: 2% 3%; */
+}
+.head{
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.button{
+    margin: 20px 20pxpx;
+    padding: 20px 20px;
+    border-radius: 15px 0px;
+    background-color: orangered
+    
+}
+.product{
+    margin-left: 150px;
+    
+}
+.but{
+    padding:20px 20px;
+    border-radius: 15px 0px;
+    margin: 20px 20px;
+    background-color: orangered;
+}
+.butt{
+    border-radius: 15px 0px;
+    background-color: white;
+    border-color: white;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    
+}
+.buttn{
+    display: flex;
+    /* margin-top: 30px; */
+    /* gap: 5%; */
+}
+.butt{
+    background-color: yellowgreen;
+    /* padding-bottom: 3%; */
+    /* border-bottom: 6%; */
+}
+.div{
+    display: flex;
+}
+.phot{
+    position: relative;
+    margin-bottom: 100px;
+    padding-left: 40%;
+   bottom: 300px;
+    }
+    .phot img{
+        width: 520px;
+        height: 300px;
+    }
+    .icon{
+        display: flex;
+        gap: 50px;
+        }
+ @media screen and(min-width:820px){
+
+ }
+ @media screen and(max-height:426px)and (min-aspect-ratio:7/4) {
+    
+ }
+ 
+
