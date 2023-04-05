@@ -6,16 +6,17 @@ console.log(num2);
 num.push("fruits");
 console.log(num);
 
+// Unshift()adds a new element at a particular position and shifts the remaining elements down the list.
 num.unshift(3);
 console.log(num);
-
+//  removes the last element from an array and returns that element.
 num.pop();
 console.log(num);
-
+// shift() removes an element at a specified position and shifts the remaining elements up. 
 num.shift();
 console.log(num);
 
-// map
+// map() creates a new array from calling a function for every array element. map() does not execute the function for empty elements.
 // given an array of x return an array even where every item in x is multiplied by 5
 let x = [5,8,2,87,33,67]
 let even=x.map(function(item){
