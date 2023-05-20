@@ -13,13 +13,9 @@ class Order:
         self.customer_name = customer_name
         self.items = []
     def add_item(self, product, quantity):
-        item = OrderItem(product, quantity)
-        self.items.append(item)
-    def remove_item(self, item):
-        self.items.remove(item)
+        self.items.append(OrderItem(product, quantity))
     def calculate_total_price(self):
-        total_price = sum(item.product.price * item.quantity for item in self.items)
-        return total_price
+        return sum(item.product.price * item.quantity for item in self.items)
 class Customer:
     def __init__(self, customer_id, name):
         self.customer_id = customer_id
@@ -28,7 +24,30 @@ class Customer:
     def place_order(self, order):
         self.orders.append(order)
     def get_order_by_number(self, order_number):
-        for order in self.orders:
-            if order.order_number == order_number:
-                return order
-        return None
+        return next((order for order in self.orders if order.order_number == order_number), None)
+#instances
+product1 = Product(1, "kales", 20)
+order1 = Order(1, "Faith")
+order1.add_item(product1, 5)
+customer1 = Customer(1, "Lindsay")
+customer1.place_order(order1)
+found_order = customer1.get_order_by_number(1)
+if found_order:
+    print("Order found:")
+    print("Order Number:", found_order.order_number)
+    print("Customer Name:", found_order.customer_name)
+    print("Total Price:", found_order.calculate_total_price())
+else:
+    print("Order not found.")
+
+
+
+
+
+
+
+
+
+
+
+
